@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Summarization</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-expand-lg bg-dark" role="navigation-demo">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-translate ">
+                <a class="navbar-brand " href="#0" style="font-weight: bold;font-size: 2em;">
+                    Text Summarization
+                </a>
+
+            </div>
+
+        </div><!-- /.container-->
+    </nav>
+    <div class="container">
+
+        <div class="col">
+            <div class="row">
+                <div class="col-md-6 ml-auto mr-auto">
+                    <div class="text-center">
+                        <h3 class="title">Summerize You Article</h3>
+                        <p class="description">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis cum quasi minima numquam
+                            accusantium eum reprehenderit debitis fugiat quisquam aspernatur!
+                        </p>
+                    </div>
+                    <div class="card card-raised card-form-horizontal">
+                        <div class="card-body ">
+                            <form method="POST" action="/">
+                                <div class="row">
+                                    <div class="col-lg-8 col-md-6 ">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+
+                                            </div>
+                                            <textarea class="form-control" placeholder="Write a Article" rows="4"
+                                                name="article"></textarea>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 ">
+
+                                        <button type=" button" class="btn btn-primary btn-block mt-4">Summerize</button>
+
+                                    </div>
+
+
+
+
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        {% block content %}
+        {% endblock %}
+
+    </div>
+</body>
+
+</html>

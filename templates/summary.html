@@ -1,0 +1,76 @@
+{% extends 'index.html' %}
+
+{% block content %}
+<div class="row" style="justify-content: space-evenly;">
+    <div class="card card-raised card-form-horizontal  col-lg-5 col-md-12 p-2 ">
+
+        <div class="card-header card-header-primary">
+            <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
+            <div class="nav-tabs-navigation">
+                <h3 class="mb-2" style="text-align: center;font-weight: bold;">Summary</h3>
+
+            </div>
+        </div>
+
+
+        <div class="card-body ">
+
+            <div class="row">
+                <div class="col-lg-12 col-md-12 ">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+
+                        </div>
+                        <textarea class="form-control" rows="4">
+                              {{l.0}}
+                            </textarea>
+
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+
+        </div>
+    </div>
+    <div class="card card-raised card-form-horizontal  col-lg-5 col-md-12 p-2 ">
+
+        <div class="card-header card-header-primary">
+            <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
+            <div class="nav-tabs-navigation">
+                <h3 class="mb-2" style="text-align: center;font-weight: bold;">Orignal</h3>
+
+            </div>
+        </div>
+
+
+        <div class="card-body ">
+
+            <div class="row">
+                <div class="col-lg-12 col-md-12 ">
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+
+                        </div>
+                        <textarea class="form-control" rows="4">
+                              {{l.1}}
+                            </textarea>
+
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}
